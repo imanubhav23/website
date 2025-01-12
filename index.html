@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marketing Portfolio</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        /* Previous styles remain the same until skills-section */
         * {
             margin: 0;
             padding: 0;
@@ -99,7 +97,6 @@
             line-height: 1.6;
         }
 
-        /* Modified Skills Section */
         .skills-section {
             max-width: 1000px;
             margin: 0 auto;
@@ -112,54 +109,134 @@
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
             margin-top: 2rem;
-            perspective: 1000px;
         }
 
         .skill-card {
-            height: 300px;
-            position: relative;
-            transform-style: preserve-3d;
-            transition: transform 0.8s;
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s;
         }
 
         .skill-card:hover {
-            transform: rotateY(180deg);
+            transform: translateY(-5px);
         }
 
-        .skill-card-front, .skill-card-back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-            border-radius: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 1.5rem;
+        .skill-card h3 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        /* Resume Page */
+        #resume {
+            background-color: white;
+        }
+
+        .resume-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .resume-section {
+            margin-bottom: 2.5rem;
+            padding: 2rem;
             background: #f8f9fa;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
 
-        .skill-card-back {
-            transform: rotateY(180deg);
+        .resume-section h2 {
+            color: #333;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #00c3ff;
+            padding-bottom: 0.5rem;
+        }
+
+        .experience-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .experience-item h3 {
+            color: #00c3ff;
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-item p {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-item ul {
+            list-style-position: inside;
+            color: #444;
+        }
+
+        /* Projects Page */
+        #projects {
+            background-color: #f8f9fa;
+        }
+
+        .projects-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-content {
+            padding: 1.5rem;
+        }
+
+        .project-content h3 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .project-content p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .project-link {
+            display: inline-block;
+            padding: 0.5rem 1rem;
             background: #00c3ff;
             color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
         }
 
-        .skill-icon {
-            font-size: 4rem;
-            margin-bottom: 1rem;
-            color: #00c3ff;
+        .project-link:hover {
+            background: #0099ff;
         }
 
-        .skill-card-back p {
-            text-align: center;
-            line-height: 1.6;
-            font-size: 1.1rem;
-        }
-
-        /* Rest of the previous styles remain the same */
+        /* Animations */
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
@@ -219,40 +296,20 @@ Looking ahead, I envision myself at the forefront of marketing innovation, where
             <h2>Core Marketing Skills</h2>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <div class="skill-card-front">
-                        <i class="fas fa-bullhorn skill-icon"></i>
-                        <h3>Digital Marketing</h3>
-                    </div>
-                    <div class="skill-card-back">
-                        <p>Expert in creating and managing comprehensive digital marketing campaigns across multiple platforms. Specialized in SEO, SEM, and social media optimization to drive meaningful engagement and conversions.</p>
-                    </div>
+                    <h3>Digital Marketing</h3>
+                    <p>Expertise in SEO, SEM, and social media marketing strategies</p>
                 </div>
                 <div class="skill-card">
-                    <div class="skill-card-front">
-                        <i class="fas fa-pen-fancy skill-icon"></i>
-                        <h3>Content Strategy</h3>
-                    </div>
-                    <div class="skill-card-back">
-                        <p>Crafting compelling narratives and content strategies that resonate with target audiences. Experience in developing multi-channel content plans that drive engagement and brand loyalty.</p>
-                    </div>
+                    <h3>Content Strategy</h3>
+                    <p>Creating engaging content that drives audience engagement and conversions</p>
                 </div>
                 <div class="skill-card">
-                    <div class="skill-card-front">
-                        <i class="fas fa-paint-brush skill-icon"></i>
-                        <h3>Brand Development</h3>
-                    </div>
-                    <div class="skill-card-back">
-                        <p>Creating and maintaining strong brand identities through strategic planning and execution. Expertise in brand positioning, voice development, and visual identity guidelines.</p>
-                    </div>
+                    <h3>Brand Development</h3>
+                    <p>Building and maintaining strong brand identities through strategic planning</p>
                 </div>
                 <div class="skill-card">
-                    <div class="skill-card-front">
-                        <i class="fas fa-chart-line skill-icon"></i>
-                        <h3>Analytics & Data</h3>
-                    </div>
-                    <div class="skill-card-back">
-                        <p>Proficient in using data analytics tools to drive marketing decisions. Experience in tracking KPIs, creating performance reports, and optimizing campaigns based on data insights.</p>
-                    </div>
+                    <h3>Analytics & Data</h3>
+                    <p>Data-driven decision making using modern marketing analytics tools</p>
                 </div>
             </div>
         </div>
