@@ -3,15 +3,16 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Oxanium', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    font-color: #fff;
 }
 
 body {
-    background-color: #f5f5f5;
+    background-color: #000;
 }
 
 /* Navigation */
 nav {
-    background-color: #333;
+    background-color: #000;
     padding: 1rem;
     position: fixed;
     width: 100%;
