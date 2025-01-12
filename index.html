@@ -12,11 +12,21 @@
 </head>
 <body>
     <nav>
-        <ul>
-            <li><a href="#" onclick="showPage('home')">Home</a></li>
-            <li><a href="#" onclick="showPage('resume')">Resume</a></li>
-            <li><a href="#" onclick="showPage('projects')">Projects</a></li>
-        </ul>
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('resume')">Resume</a></li>
+                <li><a href="#" onclick="showPage('projects')">Projects</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/your-profile" target="_blank" class="social-button">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:your.email@example.com" class="social-button">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
     </nav>
 
     <section id="home" class="active">
