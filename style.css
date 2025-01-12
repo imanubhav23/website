@@ -3,12 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Oxanium', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
-    font-color: #fff;
-        background-color: #000;
 }
 
 body {
-    background-color: #000;
+    background-color: #fff;
 }
 
 /* Navigation */
