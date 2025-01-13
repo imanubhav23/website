@@ -241,7 +241,7 @@ section.active {
     left: -1.5rem;
     font-weight: bold;
     font-size: 1.5rem;
-    top: -0.4rem;
+    top: 0;
     line-height: 1;
 }
 #resume {
@@ -365,8 +365,8 @@ section.active {
 margin-bottom: 1rem;
     font-size: 1.1rem;
     display: flex;
-    align-items: flex-start;
-    padding-top: 0.25rem;
+    align-items: center;
+    padding-top: 0;
 }
 .bullet {
     color: #CC0000;
@@ -374,8 +374,10 @@ margin-bottom: 1rem;
     font-family: 'Oxanium', sans-serif;
     font-size: 1.5rem;
     position: relative;
-    top: -0.25rem;
+    top: 0;
     line-height: 1;
+    display: inline-flex;
+    align-items: center
 }
 .blog-link {
     color: #000;
