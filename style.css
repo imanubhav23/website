@@ -248,7 +248,7 @@ section.active {
 
 #resume ul li::before {
     content: '*';
-    color: #ff0000;
+    color: #A30000;
     position: absolute;
     left: -1.5rem;
     font-weight: bold;
@@ -375,7 +375,7 @@ section.active {
 }
 
 .bullet {
-    color: #ff0000;
+    color: #A30000;
     margin-right: 0.5rem;
     font-family: 'Oxanium', sans-serif;
 }
