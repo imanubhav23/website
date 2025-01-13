@@ -114,8 +114,8 @@ section.active {
 }
 
 .profile-image {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     border-radius: 15px;
     object-fit: cover;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
