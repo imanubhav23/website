@@ -330,7 +330,7 @@ section.active {
     font-size: 1.5rem;
     margin-right: 1rem;
     font-family: 'Oxanium', sans-serif;
-    line-height: 1;
+/*     line-height: 1; */
 }
 
 .blog-content {
