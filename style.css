@@ -178,8 +178,28 @@ section.active {
     max-width: 800px;
     margin: 0 auto;
 }
+#resume ul {
+    list-style: none;
+    padding-left: 1.5rem;
+}
 
-.resume-section {
+#resume ul li {
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+#resume ul li::before {
+    content: '*';
+    color: #ff0000;
+    position: absolute;
+    left: -1.5rem;
+    font-weight: bold;
+}
+
+/* Skills list specific styling */
+#resume .skills ul li::before {
+    top: 0; /* Adjust if needed for alignment */
+}.resume-section {
     margin-bottom: 2.5rem;
     padding: 2rem;
     background: #f8f9fa;
