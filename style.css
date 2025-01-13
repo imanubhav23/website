@@ -304,58 +304,33 @@ section.active {
             border-top: 5px dotted black;
             line-height: 100%;
         }
-.blogs-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    padding: 2rem 0;
+.blog-list {
+    margin-top: 2rem;
+    margin-left: 1rem;
 }
 
-.blog-card {
-    background: white;
-    border-radius: 15px;
-    padding: 1.5rem;
+.blog-list p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
     display: flex;
-    align-items: flex-start;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
-}
-
-.blog-card:hover {
-    transform: translateY(-5px);
+    align-items: baseline;
 }
 
 .bullet {
     color: #ff0000;
-    font-size: 1.5rem;
-/*     margin-right: 1rem; */
+    margin-right: 0.5rem;
     font-family: 'Oxanium', sans-serif;
-/*     line-height: 1; */
-}
-
-.blog-content {
-    flex: 1;
 }
 
 .blog-link {
     color: #000;
     text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 600;
-    display: block;
-    margin-bottom: 0.5rem;
-    font-family: 'Oxanium', sans-serif;
     transition: color 0.3s ease;
+    font-family: 'Oxanium', sans-serif;
 }
 
 .blog-link:hover {
     color: #00c3ff;
-}
-
-.blog-preview {
-    color: #666;
-    font-size: 0.9rem;
-    line-height: 1.4;
 }
 
 /* Animations */
