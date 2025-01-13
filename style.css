@@ -368,22 +368,6 @@ section.active {
     color: #CC0000;
 }
 
-#resume {
-    font-size: 1.1rem; /* Increases base font size for all resume content */
-}
-
-#resume h2 {
-    font-size: 1.8rem; /* Larger size for section headings */
-}
-
-#resume p, #resume li {
-    font-size: 1.1rem; /* Consistent size for paragraphs and list items */
-}
-
-#resume b {
-    font-size: 1.2rem; /* Slightly larger size for bold text (like job titles) */
-}
-
 /* Animations */
 @keyframes fadeIn {
     from { opacity: 0; }
