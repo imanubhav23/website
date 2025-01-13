@@ -106,7 +106,7 @@ section.active {
     max-width: 1000px;
     margin: 0 auto;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 3rem;
     margin-bottom: 4rem;
     padding: 0 1rem;
@@ -118,7 +118,7 @@ section.active {
     object-fit: cover;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     animation: slideInLeft 1s;
-    margin-top: 3.7rem;
+    margin-top: 0;
 }
 
 .intro-text {
@@ -405,7 +405,7 @@ section.active {
         width: 100%;
         height: auto;
         max-width: 400px;
-        margin-top: 0;
+        margin: 0 auto; 
     }
     .blogs-grid {
         grid-template-columns: 1fr;
