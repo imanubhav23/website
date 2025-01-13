@@ -206,7 +206,7 @@ section.active {
     font-size: 1rem;
 }
 .skill-card-back {
-    background-color: #CC0000;
+    background-color: #000;
     color: white;
     transform: rotateY(180deg);
     padding: 15px;
@@ -341,7 +341,7 @@ section.active {
 .project-link {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background: #CC0000;
+    background: #000;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -350,7 +350,7 @@ section.active {
     margin-top: auto;
 }
 .project-link:hover {
-    background: #0099ff;
+    background: #CC0000;
 }
 
 .blog-list {
