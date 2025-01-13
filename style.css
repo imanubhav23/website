@@ -328,7 +328,7 @@ section.active {
 .bullet {
     color: #ff0000;
     font-size: 1.5rem;
-    margin-right: 1rem;
+/*     margin-right: 1rem; */
     font-family: 'Oxanium', sans-serif;
 /*     line-height: 1; */
 }
