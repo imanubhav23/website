@@ -220,7 +220,6 @@ section.active {
 #resume {
     background-color: white;
 }
-
 .resume-content {
     max-width: 800px;
     margin: 0 auto;
@@ -234,7 +233,6 @@ section.active {
     position: relative;
     margin-bottom: 0.5rem;
 }
-
 #resume ul li::before {
     content: '*';
     color: #CC0000;
@@ -242,10 +240,22 @@ section.active {
     left: -1.5rem;
     font-weight: bold;
 }
+#resume {
+    font-size: 1.1rem;
+}
+#resume h2 {
+    font-size: 1.8rem;
+}
+#resume p, #resume li {
+    font-size: 1.1rem;
+}
+#resume b {
+    font-size: 1.1rem;
+}
 
 /* Skills list specific styling */
 #resume .skills ul li::before {
-    top: 0; /* Adjust if needed for alignment */
+    top: 0;
 }.resume-section {
     margin-bottom: 2.5rem;
     padding: 2rem;
