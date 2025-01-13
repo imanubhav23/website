@@ -284,6 +284,34 @@ section.active {
             border-top: 5px dotted black;
             line-height: 100%;
         }
+.blog-list {
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+.blog-list p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: baseline;
+}
+
+.bullet {
+    color: #ff0000;
+    margin-right: 0.5rem;
+    font-family: 'Oxanium', sans-serif;
+}
+
+.blog-link {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-family: 'Oxanium', sans-serif;
+}
+
+.blog-link:hover {
+    color: #00c3ff;
+}
 
 /* Animations */
 @keyframes fadeIn {
