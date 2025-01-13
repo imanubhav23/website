@@ -48,7 +48,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #00c3ff;
+    color: #A30000;
 }
 
 .social-button {
@@ -63,7 +63,7 @@ nav a:hover {
 }
 
 .social-button:hover {
-    background-color: #00c3ff;
+    background-color: #A30000;
     transform: translateY(-2px);
 }
 
@@ -268,7 +268,7 @@ section.active {
 .resume-section h2 {
     color: #333;
     margin-bottom: 1.5rem;
-    border-bottom: 2px solid #00c3ff;
+    border-bottom: 2px solid #A30000;
     padding-bottom: 0.5rem;
 }
 
@@ -277,7 +277,7 @@ section.active {
 }
 
 .experience-item h3 {
-    color: #00c3ff;
+    color: #A30000;
     margin-bottom: 0.5rem;
 }
 
@@ -345,7 +345,7 @@ section.active {
 .project-link {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background: #00c3ff;
+    background: #A30000;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -388,7 +388,7 @@ section.active {
 }
 
 .blog-link:hover {
-    color: #00c3ff;
+    color: #A30000;
 }
 
 /* Animations */
