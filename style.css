@@ -278,6 +278,13 @@ section.active {
     background: #0099ff;
 }
 
+        .horizontal_line {
+            width: 90%;
+            height: 5px;
+            border-top: 5px dotted black;
+            line-height: 80%;
+        }
+
 /* Animations */
 @keyframes fadeIn {
     from { opacity: 0; }
