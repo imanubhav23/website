@@ -369,8 +369,8 @@ section.active {
     }
     .blogs-grid {
         grid-template-columns: 1fr;
-    }
-}    nav ul {
+    }    
+nav ul {
         flex-direction: column;
         text-align: center;
         gap: 1rem;
