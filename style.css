@@ -217,7 +217,7 @@ section.active {
 }
 
 .skill-card-back {
-    background-color: #00c3ff;
+    background-color: #A30000;
     color: white;
     transform: rotateY(180deg);
     padding: 20px;
