@@ -240,6 +240,8 @@ section.active {
     position: absolute;
     left: -1.5rem;
     font-weight: bold;
+    font-size: 1.5rem;
+    top: -0.2rem;
 }
 #resume {
     font-size: 1.1rem;
