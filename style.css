@@ -402,6 +402,49 @@ section.active {
     }
 }
 
+.logo-card {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.logo-card .work-image {
+    height: auto;
+    max-height: 400px;
+    width: 100%;
+    object-fit: contain;
+    padding: 1rem;
+    background: white;
+}
+
+.work-card .work-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.work-card:not(.logo-card) .work-image {
+    height: 250px;
+    object-fit: cover;
+}
+
+.works-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+@media (max-width: 768px) {
+    .logo-card {
+        max-width: 100%;
+    }
+    
+    .logo-card .work-image {
+        max-height: 300px;
+    }
+}
+
 .blog-list {
     max-width: 1000px;
     margin: 2rem auto 0;
