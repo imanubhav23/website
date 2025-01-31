@@ -424,7 +424,7 @@ section.active {
 }
 
 .work-card:not(.logo-card) .work-image {
-    height: 250px;
+    height: 350px;
     object-fit: cover;
         object-position: top;
 }
