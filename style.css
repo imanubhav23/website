@@ -426,6 +426,7 @@ section.active {
 .work-card:not(.logo-card) .work-image {
     height: 250px;
     object-fit: cover;
+        object-position: top;
 }
 
 .works-grid {
