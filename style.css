@@ -361,7 +361,7 @@ section.active {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
-    padding: 1rem 0;
+    padding: 2rem 0;
 }
 
 .work-card {
@@ -371,7 +371,7 @@ section.active {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s;
     height: auto;
-    max-height: 400px
+    max-height: 300px
 }
 
 .work-card:hover {
@@ -385,17 +385,20 @@ section.active {
 }
 
 .work-content {
-    padding: 1rem;
+    padding: 0.75rem;
 }
 
 .work-content h3 {
     color: #333;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
 }
 
 .work-content p {
     color: #666;
-    line-height: 1.6;
+    line-height: 1.4;
+        font-size: 0.9rem;
+    margin-bottom: 0.5rem;
 }
 
 @media (max-width: 768px) {
@@ -410,7 +413,7 @@ section.active {
 }
 
 .logo-card .work-image {
-    height: 200px;
+    height: 150px;
     max-height: 400px;
     width: 100%;
     object-fit: contain;
@@ -426,7 +429,7 @@ section.active {
 }
 
 .work-card:not(.logo-card) .work-image {
-    height: 350px;
+    height: 150px;
     object-fit: cover;
         object-position: top;
 }
