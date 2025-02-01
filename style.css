@@ -371,7 +371,7 @@ section.active {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s;
     height: auto;
-    max-height: 300px
+    max-height: 400px
 }
 
 .work-card:hover {
@@ -422,7 +422,7 @@ section.active {
 }
 
 .work-card:not(.logo-card) .work-image {
-    height: 100px;
+    height: 150px;
     object-fit: cover;
         object-position: top;
 }
