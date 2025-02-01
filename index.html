@@ -212,13 +212,16 @@ As I continue this journey, my mission is to constantly blend strategy, technolo
           
             <h2>Design & Graphics</h2>
 <div class="works-grid">
-    <div class="work-card logo-card">
-        <img src="logo.png" alt="Logo Design" class="work-image">
-        <div class="work-content">
-            <h3>Logo Design</h3>
-            <p>Your description of why you made the logo and its significance.</p>
-        </div>
+    <div class="work-card logo-card" onclick="openLogoModal()">
+    <img src="logo.png" alt="Logo Design" class="work-image">
+    <div class="logo-overlay">
+        <span>Click to enlarge</span>
     </div>
+    <div class="work-content">
+        <h3>Logo Design</h3>
+        <p>Your description of why you made the logo and its significance.</p>
+    </div>
+</div>
 
     <div class="work-card">
         <img src="info.png" alt="Infographic" class="work-image">
@@ -249,5 +252,37 @@ As I continue this journey, my mission is to constantly blend strategy, technolo
             document.getElementById(pageId).classList.add('active');
         }
     </script>
+
+    <div class="logo-modal" id="logoModal">
+    <div class="modal-content">
+        <img src="logo.png" alt="Logo Design">
+        <button class="close-modal" onclick="closeLogoModal()">×</button>
+    </div>
+</div>
+    <script>
+function openLogoModal() {
+    document.getElementById('logoModal').classList.add('active');
+    document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+}
+
+function closeLogoModal() {
+    document.getElementById('logoModal').classList.remove('active');
+    document.body.style.overflow = ''; // Restore scrolling
+}
+
+// Close modal when clicking outside the image
+document.getElementById('logoModal').addEventListener('click', function(e) {
+    if (e.target === this) {
+        closeLogoModal();
+    }
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeLogoModal();
+    }
+});
+</script>
 </body>
 </html>
