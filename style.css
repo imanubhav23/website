@@ -431,7 +431,7 @@ section.active {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3));
+    background: linear-gradient(rgba(204, 0, 0, 0.1), rgba(204, 0, 0, 0.3));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -489,20 +489,20 @@ section.active {
     right: -40px;
     width: 30px;
     height: 30px;
-    background: white;
-    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    font-size: 20px;
-    color: #000;
+    font-size: 24px;
+    color: white;
     border: none;
-    transition: background-color 0.3s ease;
+    background: none;
+    transition: transform 0.3s ease;
 }
 
 .close-modal:hover {
-    background-color: #CC0000;
+    transform: scale(1.2);
+    background: none;
     color: white;
 }
 
