@@ -290,7 +290,8 @@ section.active {
 
 .certification-link {
     color: #000;
-        border-bottom: 1px solid #CC0000;
+text-decoration-line: underline;
+    text-decoration-color: #CC0000;
     position: relative;
     transition: color 0.3s ease;
 }
