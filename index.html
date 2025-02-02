@@ -17,10 +17,10 @@
     <nav>
         <div class="nav-container">
             <ul class="nav-links">
-                <li><a href="#" onclick="showPage('home')">anu :)</a></li>
-                <li><a href="#" onclick="showPage('resume')">resume</a></li>
-                <li><a href="#" onclick="showPage('projects')">my work</a></li>
-            </ul>
+    <li><a href="#home">anu :)</a></li>
+    <li><a href="#resume">resume</a></li>
+    <li><a href="#projects">my work</a></li>
+</ul>
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/anubhav02/" target="_blank" class="social-button">
                     <i class="fa-brands fa-linkedin"></i>
@@ -246,15 +246,6 @@ As I continue this journey, my mission is to constantly blend strategy, technolo
             </b></div>
     </section>
 
-    <script>
-        function showPage(pageId) {
-            document.querySelectorAll('section').forEach(section => {
-                section.classList.remove('active');
-            });
-            document.getElementById(pageId).classList.add('active');
-        }
-    </script>
-
     <div class="logo-modal" id="logoModal">
     <div class="modal-content">
         <img src="logo.png" alt="Logo Design">
@@ -286,5 +277,25 @@ document.addEventListener('keydown', function(e) {
     }
 });
 </script>
+    <script>
+    // Function to show the correct page based on hash
+    function showPage(pageId) {
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.remove('active');
+        });
+        document.getElementById(pageId).classList.add('active');
+    }
+
+    // Function to handle page load and hash changes
+    function handlePageNavigation() {
+        let hash = window.location.hash.slice(1) || 'home';
+        showPage(hash);
+    }
+
+    // Add event listeners
+    window.addEventListener('hashchange', handlePageNavigation);
+    window.addEventListener('load', handlePageNavigation);
+</script>
+    
 </body>
 </html>
