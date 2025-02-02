@@ -299,8 +299,7 @@ section.active {
 }
 
 .certification-link {
-    color: #000;
-    text-decoration: none;
+    color: #CC0000;
     position: relative;
     transition: color 0.3s ease;
 }
@@ -316,14 +315,6 @@ section.active {
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.3s ease;
-}
-
-.certification-link:hover {
-    color: #CC0000;
-}
-
-.certification-link:hover::after {
-    transform: scaleX(1);
 }
 
 .experience-item {
