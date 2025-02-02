@@ -277,24 +277,28 @@ document.addEventListener('keydown', function(e) {
     }
 });
 </script>
+ 
     <script>
-    // Function to show the correct page based on hash
     function showPage(pageId) {
         document.querySelectorAll('section').forEach(section => {
             section.classList.remove('active');
         });
         document.getElementById(pageId).classList.add('active');
+        // Scroll to top
+        window.scrollTo(0, 0);
     }
 
-    // Function to handle page load and hash changes
     function handlePageNavigation() {
         let hash = window.location.hash.slice(1) || 'home';
         showPage(hash);
     }
 
-    // Add event listeners
     window.addEventListener('hashchange', handlePageNavigation);
     window.addEventListener('load', handlePageNavigation);
+
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+    };
 </script>
     
 </body>
