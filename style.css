@@ -70,6 +70,11 @@ nav a:hover {
     font-size: 1.2rem;
 }
 @media (max-width: 768px) {
+
+        nav {
+        padding: 0.5rem;
+    }
+    
     .nav-container {
         flex-direction: column;
         gap: 0.5rem;
@@ -684,7 +689,7 @@ nav ul {
 }
 @media (max-width: 768px) {
     section {
-        padding: 4rem 1rem 1rem;
+        padding-top: 140px;
     }
     
     .projects-container {
