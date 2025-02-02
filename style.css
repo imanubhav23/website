@@ -287,35 +287,13 @@ section.active {
     font-size: 1.1rem;
 }
 
-.certification-list li::before {
-    content: '*';
-    color: #CC0000;
-    position: absolute;
-    left: -1.5rem;
-    font-weight: bold;
-    font-size: 1.5rem;
-    top: 0;
-    line-height: 1;
-}
 
 .certification-link {
-    color: #CC0000;
+    color: #000;
     position: relative;
     transition: color 0.3s ease;
 }
 
-.certification-link::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: -2px;
-    left: 0;
-    background-color: #CC0000;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s ease;
-}
 
 .experience-item {
     margin-bottom: 1.5rem;
