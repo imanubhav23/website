@@ -768,3 +768,32 @@ nav ul {
         max-height: 80vh;
     }
 }
+/* Specific styling for the infographic card image */
+.work-card:nth-child(2) .work-image {
+    height: 250px;
+    object-fit: cover;  /* Changed from contain to cover */
+    object-position: top;  /* Show the top portion of the image */
+    background-color: white;
+    padding: 0.5rem;
+}
+
+/* Ensure the content stays at bottom without overlapping */
+.work-card:nth-child(2) .work-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 2;  /* Ensure it stays on top */
+}
+
+/* Adjust the infographic card container */
+.work-card:nth-child(2) {
+    position: relative;
+    height: auto;
+    max-height: none;
+}
