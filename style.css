@@ -432,7 +432,8 @@ section.active {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s;
     height: auto;
-    max-height: 400px
+    display: flex;
+    flex-direction: column;
     position: relative;
 }
 
@@ -443,7 +444,7 @@ section.active {
 }
 
 .work-card:nth-child(2) .work-content h3 {
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .work-card:hover {
@@ -775,25 +776,31 @@ nav ul {
     object-position: top;  /* Show the top portion of the image */
     background-color: white;
     padding: 0.5rem;
+    margin-bottom: 50px;
 }
 
 /* Ensure the content stays at bottom without overlapping */
 .work-card:nth-child(2) .work-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.75rem;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255, 0.9);
-    z-index: 2;  /* Ensure it stays on top */
+    background: white;
+    padding: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(0,0,0,0.1);
 }
 
 /* Adjust the infographic card container */
 .work-card:nth-child(2) {
-    position: relative;
-    height: auto;
-    max-height: none;
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width: 768px) {
+    .work-card:nth-child(2) .work-image {
+        height: 200px;
+        margin-bottom: 45px;
+    }
 }
