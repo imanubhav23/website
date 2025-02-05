@@ -432,7 +432,7 @@ section.active {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s;
     height: auto;
-    max-height: 200px
+    max-height: 400px
 }
 
 .work-card:hover {
@@ -482,16 +482,6 @@ section.active {
 /*     margin: 0 auto; */
     position: relative;
     cursor: pointer;
-}
-
-.logo-card .work-image {
-    height: 150px;
-    max-height: 300px;
-    width: 100%;
-    object-fit: contain;
-    padding: 0.5rem;
-    background: white;
-    transition: transform 0.3s ease;
 }
 
 /* Gradient overlay */
@@ -580,10 +570,28 @@ background: linear-gradient(
 }
 
 
+.work-card.logo-card[onclick="openLogoModal()"] .work-image {
+    height: 150px;
+    max-height: 300px;
+    width: 100%;
+    object-fit: contain;
+    padding: 0.5rem;
+    background: white;
+    transition: transform 0.3s ease;
+}
+
+.work-card.logo-card[onclick="openSMModal()"] .work-image {
+    height: 150px;
+    object-fit: contain;
+    object-position: center;
+    background-color: white;
+    padding: 0.5rem;
+}
+
 .work-card:not(.logo-card) .work-image {
     height: 150px;
     object-fit: cover;
-        object-position: top;
+    object-position: top;
 }
 
 @media (max-width: 992px) {
