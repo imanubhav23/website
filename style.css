@@ -440,7 +440,7 @@ section.active {
 .work-card:nth-child(2) .work-content {
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
 }
 
 .work-card:nth-child(2) .work-content h3 {
@@ -789,7 +789,7 @@ nav ul {
     padding: 0.75rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
     border-top: 1px solid rgba(0,0,0,0.1);
 }
 
