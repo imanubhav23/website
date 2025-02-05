@@ -440,7 +440,7 @@ section.active {
 .work-card:nth-child(2) .work-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
 }
 
 .work-card:nth-child(2) .work-content h3 {
