@@ -234,7 +234,7 @@ As I continue this journey, my mission is to constantly blend strategy, technolo
         </div>
     </div>
 
-    <div class="work-card logo-card" onclick="openLogoModal()">
+    <div class="work-card logo-card" onclick="openSMModal()">
     <img src="sm.png" alt="Poster" class="work-image">
     <div class="logo-overlay">
         <span>Click to enlarge</span>
@@ -261,6 +261,37 @@ As I continue this journey, my mission is to constantly blend strategy, technolo
         <button class="close-modal" onclick="closeLogoModal()">×</button>
     </div>
 </div>
+    <div class="logo-modal" id="logoModal">
+    <div class="modal-content">
+        <img src="sm.png" alt="Poster">
+        <button class="close-modal" onclick="closeSMModal()">×</button>
+    </div>
+</div>
+    <script>
+function openSMModal() {
+    document.getElementById('logoModal').classList.add('active');
+    document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+}
+
+function closeSMModal() {
+    document.getElementById('logoModal').classList.remove('active');
+    document.body.style.overflow = ''; // Restore scrolling
+}
+
+// Close modal when clicking outside the image
+document.getElementById('logoModal').addEventListener('click', function(e) {
+    if (e.target === this) {
+        closeSMModal();
+    }
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeSMModal();
+    }
+});
+</script>
     <script>
 function openLogoModal() {
     document.getElementById('logoModal').classList.add('active');
