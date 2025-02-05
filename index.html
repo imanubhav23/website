@@ -261,25 +261,26 @@ As I continue this journey, my mission is to constantly blend strategy, technolo
         <button class="close-modal" onclick="closeLogoModal()">×</button>
     </div>
 </div>
-    <div class="logo-modal" id="logoModal">
-    <div class="modal-content">
+   <div class="logo-modal" id="smModal">
+    <div class="modal-content poster-modal">
         <img src="sm.png" alt="Poster">
         <button class="close-modal" onclick="closeSMModal()">×</button>
     </div>
 </div>
+    
     <script>
 function openSMModal() {
-    document.getElementById('logoModal').classList.add('active');
-    document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+    document.getElementById('smModal').classList.add('active');
+    document.body.style.overflow = 'hidden';
 }
 
 function closeSMModal() {
-    document.getElementById('logoModal').classList.remove('active');
-    document.body.style.overflow = ''; // Restore scrolling
+    document.getElementById('smModal').classList.remove('active');
+    document.body.style.overflow = '';
 }
 
 // Close modal when clicking outside the image
-document.getElementById('logoModal').addEventListener('click', function(e) {
+document.getElementById('smModal').addEventListener('click', function(e) {
     if (e.target === this) {
         closeSMModal();
     }
