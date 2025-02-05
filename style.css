@@ -433,12 +433,13 @@ section.active {
     transition: transform 0.3s;
     height: auto;
     max-height: 400px
+    position: relative;
 }
+
 .work-card:nth-child(2) .work-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.75rem;
 }
 
 .work-card:nth-child(2) .work-content h3 {
@@ -457,12 +458,17 @@ section.active {
 
 .work-content {
     padding: 0.75rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.9);
 }
 
 .work-content h3 {
-    color: #333;
-    margin-bottom: 0.5rem;
-    font-size: 1.1rem;
+/*     color: #333; */
+    margin-bottom: 0;
+/*     font-size: 1.1rem; */
 }
 
 .work-content p {
@@ -581,7 +587,7 @@ background: linear-gradient(
 
 
 .work-card.logo-card[onclick="openLogoModal()"] .work-image {
-    height: 150px;
+    height: 250px;
     max-height: 300px;
     width: 100%;
     object-fit: contain;
@@ -604,10 +610,11 @@ background: linear-gradient(
 }
 
 .work-card:not(.logo-card) .work-image {
-    height: 150px;
-    object-fit: cover;
-    object-position: top;
-}
+    height: 250px;
+    object-fit: contain;
+    object-position: center;
+    background-color: white;
+    padding: 0.5rem;}
 
 @media (max-width: 992px) {
     .works-grid {
